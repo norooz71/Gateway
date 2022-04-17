@@ -1,4 +1,4 @@
-﻿namespace SAPP.Test.Contracts.Dtos
+﻿namespace SAPP.Gateway.Contracts.Dtos
 {
     public class TestChildDto
     {

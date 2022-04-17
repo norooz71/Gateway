@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SAPP.Test.Domain.Entities.Test;
-using SAPP.Test.Domain.Repositories.Test;
+using SAPP.Gateway.Domain.Entities.Test;
+using SAPP.Gateway.Domain.Repositories.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Persistance.Repositories;
+namespace SAPP.Gateway.Persistance.Repositories;
 
     internal sealed class TestParentRepository : ITestParentRepository
     {

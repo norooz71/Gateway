@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Domain.Exeptions
+namespace SAPP.Gateway.Domain.Exeptions
 {
     public enum ExceptionLevel
     {

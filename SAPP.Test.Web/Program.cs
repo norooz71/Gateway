@@ -1,14 +1,14 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using NLog;
-using SAPP.Test.Contracts.Utilities.Logger;
-using SAPP.Test.Domain.Repositories;
-using SAPP.Test.Persistance.Repositories;
-using SAPP.Test.Presentation.Controllers;
-using SAPP.Test.Services;
-using SAPP.Test.Services.Abstractions;
-using SAPP.Test.Services.Utilities.Logger;
-using SAPP.Test.Web.Middlewares;
+using SAPP.Gateway.Contracts.Utilities.Logger;
+using SAPP.Gateway.Domain.Repositories;
+using SAPP.Gateway.Persistance.Repositories;
+using SAPP.Gateway.Presentation.Controllers;
+using SAPP.Gateway.Services;
+using SAPP.Gateway.Services.Abstractions;
+using SAPP.Gateway.Services.Utilities.Logger;
+using SAPP.Gateway.Web.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 

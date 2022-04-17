@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Contracts.Dtos.Test
+namespace SAPP.Gateway.Contracts.Dtos.Test
 {
     class TestDto
     {

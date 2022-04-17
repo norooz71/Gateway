@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "SAPP.Test.Web": {
+    "SAPP.Gateway.Web": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

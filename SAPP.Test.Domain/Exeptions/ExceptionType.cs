@@ -1,4 +1,4 @@
-﻿namespace SAPP.Test.Domain.Exeptions
+﻿namespace SAPP.Gateway.Domain.Exeptions
 {
     public enum ExceptionType
     {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace SAPP.Test.Persistance.Migrations
+namespace SAPP.Gateway.Persistance.Migrations
 {
     public partial class init : Migration
     {

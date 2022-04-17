@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Contracts.Utilities.Logger
+namespace SAPP.Gateway.Contracts.Utilities.Logger
 {
     public interface ILoggerManager
     {

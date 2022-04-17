@@ -1,6 +1,6 @@
-﻿using SAPP.Test.Services.Abstractions.Test;
+﻿using SAPP.Gateway.Services.Abstractions.Test;
 
-namespace SAPP.Test.Services.Abstractions
+namespace SAPP.Gateway.Services.Abstractions
 {
     public interface IServiceManager
     {

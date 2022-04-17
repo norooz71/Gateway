@@ -1,9 +1,9 @@
-﻿using SAPP.Test.Contracts.Dtos;
+﻿using SAPP.Gateway.Contracts.Dtos;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Services.Abstractions.Test
+namespace SAPP.Gateway.Services.Abstractions.Test
 {
     public interface ITestParentService
     {

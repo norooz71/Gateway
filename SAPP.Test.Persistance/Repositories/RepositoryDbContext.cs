@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SAPP.Test.Domain.Entities.Test;
+using SAPP.Gateway.Domain.Entities.Test;
 
 
-namespace SAPP.Test.Persistance.Repositories;
+namespace SAPP.Gateway.Persistance.Repositories;
 
 public sealed class RepositoryDbContext :DbContext 
 {

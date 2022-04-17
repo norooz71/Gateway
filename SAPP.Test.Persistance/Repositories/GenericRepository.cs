@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SAPP.Test.Domain.Repositories;
+using SAPP.Gateway.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Persistance.Repositories
+namespace SAPP.Gateway.Persistance.Repositories
 {
     internal class GenericRepository<T> : IGenericRepository<T> where T : class
     {

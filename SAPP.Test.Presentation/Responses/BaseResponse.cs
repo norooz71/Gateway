@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Presentation.Responses;
+namespace SAPP.Gateway.Presentation.Responses;
 
 public record BaseResponse<T> where T : class
 {

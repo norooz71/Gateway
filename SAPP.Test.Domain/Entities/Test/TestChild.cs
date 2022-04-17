@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Domain.Entities.Test
+namespace SAPP.Gateway.Domain.Entities.Test
 {
     public class TestChild
     {

@@ -1,5 +1,5 @@
-﻿using SAPP.Test.Domain.Repositories;
-using SAPP.Test.Persistance.Repositories;
+﻿using SAPP.Gateway.Domain.Repositories;
+using SAPP.Gateway.Persistance.Repositories;
 using System.Threading;
 using System.Threading.Tasks;
 

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SAPP.Test.Persistance.Repositories;
+using SAPP.Gateway.Persistance.Repositories;
 
 #nullable disable
 
-namespace SAPP.Test.Persistance.Migrations
+namespace SAPP.Gateway.Persistance.Migrations
 {
     [DbContext(typeof(RepositoryDbContext))]
     [Migration("20220403062955_init")]
@@ -24,7 +24,7 @@ namespace SAPP.Test.Persistance.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SAPP.Test.Domain.Entities.Test.TestChild", b =>
+            modelBuilder.Entity("SAPP.Gateway.Domain.Entities.Test.TestChild", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +53,7 @@ namespace SAPP.Test.Persistance.Migrations
                     b.ToTable("TestChild", (string)null);
                 });
 
-            modelBuilder.Entity("SAPP.Test.Domain.Entities.Test.TestParent", b =>
+            modelBuilder.Entity("SAPP.Gateway.Domain.Entities.Test.TestParent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -74,14 +74,14 @@ namespace SAPP.Test.Persistance.Migrations
                     b.ToTable("TestParent", (string)null);
                 });
 
-            modelBuilder.Entity("SAPP.Test.Domain.Entities.Test.TestChild", b =>
+            modelBuilder.Entity("SAPP.Gateway.Domain.Entities.Test.TestChild", b =>
                 {
-                    b.HasOne("SAPP.Test.Domain.Entities.Test.TestParent", null)
+                    b.HasOne("SAPP.Gateway.Domain.Entities.Test.TestParent", null)
                         .WithMany("TextChilderen")
                         .HasForeignKey("TestParentId");
                 });
 
-            modelBuilder.Entity("SAPP.Test.Domain.Entities.Test.TestParent", b =>
+            modelBuilder.Entity("SAPP.Gateway.Domain.Entities.Test.TestParent", b =>
                 {
                     b.Navigation("TextChilderen");
                 });

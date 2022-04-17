@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SAPP.Test.Services.Abstractions\SAPP.Test.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Services.Abstractions\SAPP.Gateway.Services.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

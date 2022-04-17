@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SAPP.Test.Domain\SAPP.Test.Domain.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Domain\SAPP.Gateway.Domain.csproj" />
   </ItemGroup>
 
 </Project>

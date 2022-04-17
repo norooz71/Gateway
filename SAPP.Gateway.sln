@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{158B1839-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3C50C985-CC6E-42C1-BAF1-8A83F75442D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Domain", "SAPP.Test.Domain\SAPP.Test.Domain.csproj", "{D169EBFB-B85A-42E3-8996-9C42FE2FB679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Domain", "SAPP.Test.Domain\SAPP.Gateway.Domain.csproj", "{D169EBFB-B85A-42E3-8996-9C42FE2FB679}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Contracts", "SAPP.Test.Contracts\SAPP.Test.Contracts.csproj", "{A3FA159B-2F6D-413F-8664-3C215AF7D1F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Contracts", "SAPP.Test.Contracts\SAPP.Gateway.Contracts.csproj", "{A3FA159B-2F6D-413F-8664-3C215AF7D1F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Services.Abstractions", "SAPP.Test.Services.Abstractions\SAPP.Test.Services.Abstractions.csproj", "{D51AAD04-1AB0-4FAE-89A5-26BF6447F27D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Services.Abstractions", "SAPP.Test.Services.Abstractions\SAPP.Gateway.Services.Abstractions.csproj", "{D51AAD04-1AB0-4FAE-89A5-26BF6447F27D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Persistance", "SAPP.Test.Persistance\SAPP.Test.Persistance.csproj", "{73EE5707-2412-48E9-A0C1-DF13260FD46E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Persistance", "SAPP.Test.Persistance\SAPP.Gateway.Persistance.csproj", "{73EE5707-2412-48E9-A0C1-DF13260FD46E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Presentation", "SAPP.Test.Presentation\SAPP.Test.Presentation.csproj", "{693E1834-D912-41B6-8D93-56E8FC271AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Presentation", "SAPP.Test.Presentation\SAPP.Gateway.Presentation.csproj", "{693E1834-D912-41B6-8D93-56E8FC271AE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Test.Services", "SAPP.Test.Services\SAPP.Test.Services.csproj", "{64AB542D-061B-4150-9870-5C857CB1142E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Services", "SAPP.Test.Services\SAPP.Gateway.Services.csproj", "{64AB542D-061B-4150-9870-5C857CB1142E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPP.Test.Web", "SAPP.Test.Web\SAPP.Test.Web.csproj", "{735C3608-30C6-4952-971C-5AFB579162F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPP.Gateway.Web", "SAPP.Test.Web\SAPP.Gateway.Web.csproj", "{735C3608-30C6-4952-971C-5AFB579162F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

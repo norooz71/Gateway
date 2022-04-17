@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SAPP.Test.Contracts.Dtos;
-using SAPP.Test.Presentation.Responses;
-using SAPP.Test.Services.Abstractions;
+using SAPP.Gateway.Contracts.Dtos;
+using SAPP.Gateway.Presentation.Responses;
+using SAPP.Gateway.Services.Abstractions;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Presentation.Controllers
+namespace SAPP.Gateway.Presentation.Controllers
 {
     [ApiController]
     [Route("api/[Controller]")]

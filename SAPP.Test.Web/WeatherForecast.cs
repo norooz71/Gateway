@@ -1,4 +1,4 @@
-namespace SAPP.Test.Web
+namespace SAPP.Gateway.Web
 {
     public class WeatherForecast
     {

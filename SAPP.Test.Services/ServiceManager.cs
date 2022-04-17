@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using SAPP.Test.Contracts.Utilities.Logger;
-using SAPP.Test.Domain.Repositories;
-using SAPP.Test.Services.Abstractions;
-using SAPP.Test.Services.Abstractions.Test;
-using SAPP.Test.Services.Test;
+using SAPP.Gateway.Contracts.Utilities.Logger;
+using SAPP.Gateway.Domain.Repositories;
+using SAPP.Gateway.Services.Abstractions;
+using SAPP.Gateway.Services.Abstractions.Test;
+using SAPP.Gateway.Services.Test;
 using System;
 
-namespace SAPP.Test.Services
+namespace SAPP.Gateway.Services
 {
     public sealed class ServiceManager : IServiceManager
     {

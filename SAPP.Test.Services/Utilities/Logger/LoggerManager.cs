@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using NLog;
-using SAPP.Test.Contracts.Utilities.Logger;
+using SAPP.Gateway.Contracts.Utilities.Logger;
 
-namespace SAPP.Test.Services.Utilities.Logger
+namespace SAPP.Gateway.Services.Utilities.Logger
 {
     public class LoggerManager : ILoggerManager
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Domain.ApplicationMessages
+namespace SAPP.Gateway.Domain.ApplicationMessages
 {
     class ErrorMessages
     {

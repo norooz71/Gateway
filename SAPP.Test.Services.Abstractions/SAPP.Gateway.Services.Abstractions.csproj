@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SAPP.Test.Contracts\SAPP.Test.Contracts.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Contracts\SAPP.Gateway.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

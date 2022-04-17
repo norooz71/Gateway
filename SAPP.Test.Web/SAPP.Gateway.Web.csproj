@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SAPP.Test.Persistance\SAPP.Test.Persistance.csproj" />
-    <ProjectReference Include="..\SAPP.Test.Presentation\SAPP.Test.Presentation.csproj" />
-    <ProjectReference Include="..\SAPP.Test.Services\SAPP.Test.Services.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Persistance\SAPP.Gateway.Persistance.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Presentation\SAPP.Gateway.Presentation.csproj" />
+    <ProjectReference Include="..\SAPP.Test.Services\SAPP.Gateway.Services.csproj" />
   </ItemGroup>
 
 </Project>

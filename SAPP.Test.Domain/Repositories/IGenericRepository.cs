@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Domain.Repositories;
+namespace SAPP.Gateway.Domain.Repositories;
 
 public interface IGenericRepository<T> where T : class
 {

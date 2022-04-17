@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using SAPP.Test.Contracts.Dtos;
-using SAPP.Test.Domain.Entities.Test;
-using SAPP.Test.Domain.Exeptions;
-using SAPP.Test.Domain.Repositories;
-using SAPP.Test.Services.Abstractions.Test;
+using SAPP.Gateway.Contracts.Dtos;
+using SAPP.Gateway.Domain.Entities.Test;
+using SAPP.Gateway.Domain.Exeptions;
+using SAPP.Gateway.Domain.Repositories;
+using SAPP.Gateway.Services.Abstractions.Test;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SAPP.Test.Services.Test
+namespace SAPP.Gateway.Services.Test
 {
     public sealed class TestParentService : ITestParentService
     {

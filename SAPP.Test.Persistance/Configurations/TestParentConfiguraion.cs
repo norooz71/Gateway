@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SAPP.Test.Domain.Entities.Test;
+using SAPP.Gateway.Domain.Entities.Test;
 
-namespace SAPP.Test.Persistance.Configurations
+namespace SAPP.Gateway.Persistance.Configurations
 {
     internal sealed class TestParentConfiguraion : IEntityTypeConfiguration<TestParent>
     {

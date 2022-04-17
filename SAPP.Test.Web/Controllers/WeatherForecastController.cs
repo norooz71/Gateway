@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace SAPP.Test.Web.Controllers
+namespace SAPP.Gateway.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

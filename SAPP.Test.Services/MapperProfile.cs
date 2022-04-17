@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using SAPP.Test.Contracts.Dtos;
-using SAPP.Test.Domain.Entities.Test;
+using SAPP.Gateway.Contracts.Dtos;
+using SAPP.Gateway.Domain.Entities.Test;
 
-namespace SAPP.Test.Services
+namespace SAPP.Gateway.Services
 {
     public class MapperProfile:Profile
     {

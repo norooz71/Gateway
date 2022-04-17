@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
-using SAPP.Test.Contracts.Utilities.Logger;
-using SAPP.Test.Domain.Entities.Test;
-using SAPP.Test.Domain.Exeptions;
-using SAPP.Test.Presentation.Responses;
+using SAPP.Gateway.Contracts.Utilities.Logger;
+using SAPP.Gateway.Domain.Entities.Test;
+using SAPP.Gateway.Domain.Exeptions;
+using SAPP.Gateway.Presentation.Responses;
 
-namespace SAPP.Test.Web.Middlewares
+namespace SAPP.Gateway.Web.Middlewares
 {
     public class CustomExceptionMiddleware
     {
