@@ -1,6 +1,8 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using NLog;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 using SAPP.Gateway.Contracts.Utilities.Logger;
 using SAPP.Gateway.Domain.Repositories;
 using SAPP.Gateway.Persistance.Repositories;
@@ -20,6 +22,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IServiceManager,ServiceManager>();
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+builder.Configuration.AddJsonFile("Routes.json");
+builder.Services.AddOcelot();
+
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),"/nlog.config"));
 
 builder.Services.AddDbContext<RepositoryDbContext>(dbBuilder =>
@@ -53,5 +58,7 @@ app.UseMiddleware<CustomExceptionMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseOcelot();
 
 app.Run();

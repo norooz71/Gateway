@@ -1,0 +1,50 @@
+{
+  "Routes": [
+
+    {
+
+      "DownstreamHostAndPorts": [
+
+        {
+
+          "Host": "localhost",
+
+          "Port": "11318"
+
+        }
+
+      ],
+
+      "DownstreamPathTemplate": "/api/{version}/{controller}/{everything}",
+
+      "DownstreamScheme": "http",
+
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ],
+
+      "UpstreamPathTemplate": "/api/{version}/{controller}/{everything}"
+
+    },
+    {
+      "DownstreamHostAndPorts": [
+
+        {
+          "Host": "localhost",
+
+          "Port": "9092"
+
+        }
+
+      ],
+
+      "DownstreamPathTemplate": "/api/{version}/{controller}/{everything}",
+
+      "DownstreamScheme": "http",
+
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ],
+
+      "UpstreamPathTemplate": "/api/microName/{version}/{controller}/{everything}"
+
+    }
+  ]
+}
+ 
