@@ -1,4 +1,4 @@
-﻿using SAPP.Gateway.Contracts.Dtos;
+﻿using SAPP.Gateway.Services.Abstractions.Dtos.Test;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;

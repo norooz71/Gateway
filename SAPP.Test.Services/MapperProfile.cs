@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using SAPP.Gateway.Contracts.Dtos;
 using SAPP.Gateway.Domain.Entities.Test;
+using SAPP.Gateway.Services.Abstractions.Dtos;
+using SAPP.Gateway.Services.Abstractions.Dtos.Test;
 
 namespace SAPP.Gateway.Services
 {

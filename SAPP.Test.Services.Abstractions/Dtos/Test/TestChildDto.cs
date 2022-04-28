@@ -1,5 +1,4 @@
-﻿namespace SAPP.Gateway.Contracts.Dtos
-{
+﻿namespace SAPP.Gateway.Services.Abstractions.Dtos.Test;
     public class TestChildDto
     {
         public int Id { get; set; }
@@ -8,4 +7,4 @@
         public int TestId { get; set; }
 
     }
-}
+

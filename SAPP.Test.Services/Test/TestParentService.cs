@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using SAPP.Gateway.Contracts.Dtos;
 using SAPP.Gateway.Domain.Entities.Test;
 using SAPP.Gateway.Domain.Exeptions;
 using SAPP.Gateway.Domain.Repositories;
+using SAPP.Gateway.Services.Abstractions.Dtos.Test;
 using SAPP.Gateway.Services.Abstractions.Test;
 using System.Collections.Generic;
 using System.Linq;
