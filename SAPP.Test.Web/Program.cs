@@ -1,9 +1,13 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using NLog;
+using NoaFounding.Infrastructure.ExternalServices;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using SAPP.Gateway.Contracts.Utilities.Logger;
+using SAPP.Gateway.Contracts.Utilities.ServiceCall;
 using SAPP.Gateway.Domain.Repositories;
 using SAPP.Gateway.Persistance.Repositories;
 using SAPP.Gateway.Presentation.Controllers;
@@ -21,6 +25,8 @@ builder.Services.AddControllers().AddApplicationPart(typeof(TestParentController
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IServiceManager,ServiceManager>();
+builder.Services.AddScoped<IServiceCall, ServiceCall>();
+builder.Services.AddScoped<HttpClient>();
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 builder.Configuration.AddJsonFile("Routes.json");
 builder.Services.AddOcelot();
@@ -54,6 +60,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<CustomExceptionMiddleware>();
+
+app.UseMiddleware<RoutingDecideMiddleware>();
 
 app.UseAuthorization();
 

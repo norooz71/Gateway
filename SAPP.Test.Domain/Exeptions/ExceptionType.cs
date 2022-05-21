@@ -5,6 +5,7 @@
         NotFound,
         Business,
         InvalidArgument,
+        ServiceCall
 
     }
 }

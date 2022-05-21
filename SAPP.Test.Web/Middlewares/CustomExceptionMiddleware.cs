@@ -10,16 +10,13 @@ namespace SAPP.Gateway.Web.Middlewares
     {
         private readonly RequestDelegate _next;
 
-        private readonly ILoggerManager _logger;
-
-        public CustomExceptionMiddleware(RequestDelegate next,ILoggerManager logger)
+        public CustomExceptionMiddleware(RequestDelegate next)
         {
             _next = next;
-
-            _logger = logger;   
+ 
         }
 
-        public async Task InvokeAsync(HttpContext _context)
+        public async Task InvokeAsync(HttpContext _context, ILoggerManager logger)
         {
             try
             {
@@ -27,7 +24,7 @@ namespace SAPP.Gateway.Web.Middlewares
             }
             catch (GlobalException ex)
             {
-                _logger.Error(ex.Message);
+                logger.Error(ex.Message);
 
                 _context.Response.ContentType = "application/json";
                 _context.Response.StatusCode = _context.Response.StatusCode;

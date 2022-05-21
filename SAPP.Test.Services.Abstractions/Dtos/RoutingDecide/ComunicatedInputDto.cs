@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace SAPP.Gateway.Services.Abstractions.Dtos.RoutingDecide
 {
     public class ComunicatedInputDto
     {
-        public HttpContext HttpAuthenticationContext { get; set; }
+        public string AuthHeader { get; set; }
+
+        public string CsrfTokenId { get; set; }
     }
 }
