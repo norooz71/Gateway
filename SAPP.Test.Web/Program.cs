@@ -13,6 +13,8 @@ using SAPP.Gateway.Persistance.Repositories;
 using SAPP.Gateway.Presentation.Controllers;
 using SAPP.Gateway.Services;
 using SAPP.Gateway.Services.Abstractions;
+using SAPP.Gateway.Services.Abstractions.Redis;
+using SAPP.Gateway.Services.Redis;
 using SAPP.Gateway.Services.Utilities.Logger;
 using SAPP.Gateway.Web.Middlewares;
 
@@ -49,6 +51,15 @@ IMapper mapper=mapConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 builder.Services.AddSingleton<ILoggerManager,LoggerManager>();
+
+builder.Services.AddSingleton<IRedisService,RedisService>();
+
+builder.Services.AddStackExchangeRedisCache(Options =>
+{
+    Options.Configuration = builder.Configuration["RedisConfiguration:Host"];
+
+    Options.InstanceName = "";
+});
 
 var app = builder.Build();
 
