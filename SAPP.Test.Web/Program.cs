@@ -54,6 +54,8 @@ builder.Services.AddSingleton<ILoggerManager,LoggerManager>();
 
 builder.Services.AddSingleton<IRedisService,RedisService>();
 
+builder.Services.AddMemoryCache(builder => builder.SizeLimit = 1024);
+
 builder.Services.AddStackExchangeRedisCache(Options =>
 {
     Options.Configuration = builder.Configuration["RedisConfiguration:Host"];
